@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Green Mobility – Home</title>
+    <link rel="stylesheet" href="website .css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Green Mobility Initiative</h1>
+    </header>
+
+    <nav>
+        <a>Home</a>
+        <a>Gallery</a>
+        <a>About</a>
+        <a>Contact</a>
+    </nav>
+
+    <div class="banner">Green Mobility for a Cleaner Future</div>
+
+    <div class="section">
+        <h2>Introduction to Green Mobility</h2>
+        <p>
+            Green mobility focuses on sustainable and eco-friendly transportation methods
+            such as electric vehicles, public transport, cycling, and walking.
+            By reducing dependence on fossil fuels, we can minimize pollution
+            and contribute to cleaner air in cities like Delhi.
+        </p>
+
+        <h2>Pollution Awareness</h2>
+        <p>
+            Air pollution in Delhi is a growing concern.
+            Green mobility solutions can significantly reduce harmful emissions
+            and help create a healthier, greener future for everyone.
+        </p>
+    </div>
+
+    <header>
+        <h1>Sustainable Transport Gallery</h1>
+    </header>
+
+    <div class="section">
+        <h2>Eco-Friendly Transport Options</h2>
+
+        <div class="gallery">
+
+            <div class="galleryhover">
+                <img src="eco1 .jpg" alt="">
+            </div>
+            <div class="galleryhover">
+                <img src="eco2.jpg" alt="">
+            </div>
+            <div class="galleryhover">
+                <img src="eco5.jpg" alt="">
+            </div>
+            <div class="galleryhover">
+                <img src="eco3.jpg" alt="">
+            </div>
+            <div class="galleryhover">
+                <img src="eco4.jpg" alt="">
+            </div>
+            <div class="galleryhover">
+                <img src="eco6.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <header>
+        <h1>Environmental Issues & Delhi’s Air Pollution</h1>
+    </header>
+
+
+    <div class="section">
+        <h2>Why Delhi’s Pollution Is a Concern</h2>
+        <p>
+            Delhi frequently records extremely high Air Quality Index (AQI) levels.
+            Rapid urbanization, heavy vehicle traffic, industrial emissions, and construction dust
+            contribute to severe air pollution, affecting public health.
+        </p>
+
+        <h2>Main Causes</h2>
+        <ul>
+            <li>Vehicular emissions</li>
+            <li>Factory smoke</li>
+            <li>Construction dust</li>
+            <li>Stubble burning in nearby states</li>
+            <li>Weather conditions trapping pollutants</li>
+        </ul>
+
+        <h2>How Green Mobility Helps</h2>
+        <p>
+            Green mobility promotes electric vehicles, cycling, metro, walking, and other clean transport modes.
+            These solutions reduce emissions and support healthier, sustainable urban living.
+        </p>
+    </div>
+
+    <header>
+        <h1>Contact / Feedback</h1>
+    </header>
+
+    <div class="section">
+        <h2>Send Us Your Feedback</h2>
+
+        <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+    <!-- CONTACT FORM VALIDATION -->
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill all fields.");
+                return false;
+            }
+            alert("Form submitted successfully!");
+            return true;
+        }
+
+
+        // CARBON FOOTPRINT CALCULATOR
+        function calculateFootprint() {
+            let km = document.getElementById("km").value;
+            let result = km * 0.120; // average CO₂ per km for vehicles
+
+            document.getElementById("output").innerHTML =
+                "Your estimated carbon footprint is: <b>" + result.toFixed(2) + " kg CO₂</b>";
+        }
+    </script>
+
+
+
+    <header class="navbar">
+        <div class="brand">
+            <h2>Green Mobility</h2>
+            <p>Drive Green, Live Clean</p>
+        </div>
+
+        <nav class="menu">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">FAQ</a>
+            <a href="#">Support</a>
+        </nav>
+
+        <div class="buttons">
+            <a href="#" class="click-btn">→ Click Here</a>
+            <a href="#" class="contact-btn">Contact</a>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
